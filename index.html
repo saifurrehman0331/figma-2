@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <style>
+        .navbar-brand img {
+            height: 30px;
+        }
+        .nav-link {
+            color: black;
+        }
+        .btn-signin {
+            background-color: black;
+            color: white
+        ;}
+
+            .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px;}
+        
+        .hero-text {
+            max-width: 50%;
+        }
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .btn-trial {
+            background-color: black;
+            color: white;
+            margin-top: 20px;
+        }
+        .feature-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: left;
+            margin: 10px;
+            height: 330px;
+        }
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .hosting-section {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+        }
+        .hosting-text {
+            max-width: 50%;
+        }
+        .hosting-image img {
+            max-width: 100%;
+            height: auto;
+        }
+       
+        .feature-box {
+            border: 2px solid #0a0101;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: left;
+            margin: 10px;
+            height: 330px;
+        }
+        .feature-number {
+            font-size: 3.5em;
+            font-weight: bold;
+        }
+        .signup-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 50px 0;
+        }
+        .signup-text {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .signup-input {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            padding:1%;
+        }
+        .signup-input input {
+            border: none;
+            padding: 10px;
+            outline: none;
+        }
+        .signup-input button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+        }
+        .footer-logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .footer-logo img {
+            margin-right: 10px;
+        }
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        .social-icons a {
+            margin-right: 15px;
+            color: black;
+            text-decoration: none;
+        }
+        .gap-25{
+            gap:25%;
+        }
+        .border-radius-0{
+            border-radius:0;
+        }
+        .margin-2{
+            margin:2%;
+        }
+        .fs-80{
+            font-size: 54px;
+        }
+        .flex-wrapno{
+            flex-wrap: nowrap !important;
+            gap: 20px;
+        }
+        .mt-17{
+            margin-left: 32%;
+        }
+        .m-l-17{
+            margin-left: -17%;
+        }
+        .gap-4rem{
+            gap: 4.5em;
+        }
+        @media only screen and (max-width:500px){
+            .width{
+                width:99%;
+                display:flex;
+                flex-wrap: wrap;
+            }
+            .fs-80{
+                font-size: 20px;
+            }
+            .fs-5{
+                font-size: 10px !important;
+            }
+            .btn-trial{
+                font-size: 10px;
+                padding: 2px;
+            }
+            .width>img{
+                width:60%;
+            }
+
+
+        }
+
+
+
+
+        
+    </style>
+</head>
+<body class="margin-2 width">
+    <nav class="d-flex navbar-expand-lg navbar-light  gap-25">
+        <a class="navbar-brand" href="#">
+            <img src="images/Vector.png" alt="Logo">
+           <b> Host Ease</b>
+        </a>
+        <div class="collapse navbar-collapse justify-content-between">
+            <ul class="navbar-nav mr-auto gap-4rem fw-medium">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+            </ul>
+            <button class="btn btn-signin border-radius-0">Sign In</button>
+        </div>
+    </nav>
+    <div class="container hero-section width">
+        <div class="hero-text width">
+            <h1 class="fs-80 width">Streamlining your journey to digital dominance.</h1>
+            <p class="fs-5 width">Streamlining your journey to digital dominance. Effortless hosting solutions for a seamless online presence.</p>
+            <button class="btn btn-trial border-radius-0">Start a 10-Day Free Trial</button>
+        </div>
+        <div class="hero-image width">
+            <img src="images/idea-launch 1.jpg" alt="Illustration">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">☁️</div>
+                    <h4>Seamless Integration</h4>
+                    <p>HostEase offers seamless integration of hosting and domain management services, providing users with a unified platform to effortlessly manage their online presence.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h4>Innovation in Simplicity</h4>
+                    <p>We pride ourselves on innovative solutions that prioritize simplicity without compromising on performance or security, making it ideal choice for both beginners and experienced users alike.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">❤️</div>
+                    <h4>Personalized Support</h4>
+                    <p>Our dedicated 24/7 support team goes the extra mile to provide personalized assistance, ensuring that every user receives the help they need to succeed online.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container hosting-section gap-5">
+        <div class="hosting-image">
+            <img src="images/Clip-path group.jpg" alt="Illustration">
+        </div>
+        <div class="hosting-text">
+            <h2 class="fw-bold">Secure web hosting that grows with your business</h2>
+            <p class="mt-4 fs-5 lead">Our secure web hosting services are designed to evolve seamlessly alongside your business. With robust security measures in place, including SSL encryption and regular backups, your data stays protected at all times. Trust HostEase to safeguard your online presence while supporting your business's growth trajectory.</p>
+        </div>
+    </div>
+
+    
+<div class="container text-center my-5">
+    <h2 class="fw-bold">Our Features</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="feature-box">
+                <div class="feature-number">#1</div>
+                <h3>Easy Site Builder</h3>
+                <p>Build your website with ease using our intuitive drag-and-drop site builder, no coding required. Create stunning, professional-looking websites in minutes.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-box">
+                <div class="feature-number">#2</div>
+                <h3>Domain Registration</h3>
+                <p>Secure your online identity with ease by registering your domain name through us. Choose from a wide range of domain extensions and manage your domain effortlessly.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-box">
+                <div class="feature-number">#3</div>
+                <h3>Reliable Hosting</h3>
+                <p>Experience top-notch performance and reliability with our hosting solutions. Benefit from high uptime, fast loading speeds, and robust security measures.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center my-5">
+    
+    <div class="row">
+        <div class="col-md-4">
+            <div class="feature-box">
+                <div class="feature-number">#4</div>
+                <h3>24/7 Customer Support</h3>
+                <p>Build your website with ease using our intuitive drag-and-drop site builder, no coding required. Create stunning, professional-looking websites in minutes.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-box">
+                <div class="feature-number">#5</div>
+                <h3>One-click Install</h3>
+                <p>Secure your online identity with ease by registering your domain name through us. Choose from a wide range of domain extensions and manage your domain effortlessly.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-box">
+                <div class="feature-number">#6</div>
+                <h3>Scalable Hosting Plans</h3>
+                <p>Experience top-notch performance and reliability with our hosting solutions. Benefit from high uptime, fast loading speeds, and robust security measures.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="signup-section">
+        <div class="signup-text">
+            Sign up for the best web hosting service today!
+        </div>
+        <div class="signup-input">
+            <input type="email" placeholder="Enter your Email">
+            <button type="button">Get Started</button>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row flex-wrapno">
+            <div class="col-md-4">
+                <div class="footer-logo">
+                    <img src="images/Vector.png" alt="Logo">
+                    Host Ease
+                </div>
+                <p class="mt-3 fs-6 lead ">Our vision is to empower individuals and businesses to thrive online by providing effortless hosting solutions. We aim to streamline the journey to digital success, making it accessible to all.</p>
+                <!-- <p>© 2024 Host Ease All Rights Reserved</p> -->
+            </div>
+            <div class="col-md-4 mt-17">
+                <h5>Quick Menu</h5>
+                <ul class="footer-links mt-3 lead">
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Pricing</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="col-md-4 m-l-17 w-auto lead">
+                <h5>Resources</h5>
+                <ul class="footer-links mt-3">
+                    <li>Newsletter</li>
+                    <li>Community</li>
+                    <li>Jobs</li>
+                    <li>Forums</li>
+                </ul>
+                <!-- <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-between mt-5"><p>© 2024 Host Ease All Rights Reserved</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"> <img src="images/facebook.png" alt=""></i></a>
+            <a href="#"><i class="fab fa-instagram"> <img src="images/insta.png" alt=""></i></a>
+            <a href="#"><i class="fab fa-twitter"> <img src="images/twitter.png" alt=""></i></a>
+        </div>
+    
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
